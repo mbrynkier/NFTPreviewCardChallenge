@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+        :root{
+          --soft-blue: hsl(215, 51%, 70%);
+          --cyan: hsl(178, 100%, 50%);
+          --main-dark-blue: hsl(217, 54%, 11%);
+          --card-dark-blue: hsl(216, 50%, 16%);
+          --line-dark-blue: hsl(215, 32%, 27%);
+          --white: hsl(0, 0%, 100%);
+        }
+        body{
+          font-family: 'Outfit', sans-serif;
+          background-color: var(--main-dark-blue);
+        }
+        main{
+            min-height: 100vh;
+            display: grid;            
+            place-items: center;    
+                  
+        }
+        
+        .container{
+            width: 18rem;
+            height: 30rem;
+            background-color: var(--card-dark-blue);
+            border-radius: 12px;
+            padding: 20px;
+            display: grid;
+            justify-content: center;                               
+        }
+        figure{
+            margin: 0;
+            position: relative; 
+            width: 18rem;
+            height: 18rem; 
+            box-sizing: border-box;                    
+        }    
+        .container-img .highlight{            
+            border-radius: 15px;             
+            position: absolute; 
+            z-index: 1;
+            opacity: 0;
+            background-color: var(--cyan);   
+            cursor: pointer; 
+        }    
+        .img-big{
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 12px;             
+            position: absolute;                                   
+        }
+        .highlight:hover{                   
+            opacity: 0.5;                                 
+        }
+        .img-eye{
+            position: absolute; 
+            top: 41%;
+            right: 41%;                        
+        }
+        .container a{
+            text-decoration: none;  
+            color: var(--white);      
+        }
+        .container a:hover{            
+            color: var(--cyan);
+        }        
+        h1{
+            color: var(--white);
+            font-weight: 600;
+            font-size: 1.3rem;  
+            margin: 0;              
+        }
+        h2{
+            color: var(--soft-blue);
+            font-weight: 300;
+            font-size: 1rem;
+            margin: 0;
+        }
+        .container div{
+            display: flex;            
+            align-content: center; 
+            align-items: center;           
+        }      
+        .content{
+            margin: 0.1rem 0;
+        }  
+        .mid{
+            justify-content: space-between;             
+        }
+        .mid span{
+            font-size: 0.8rem;                    
+        }
+        .coin span{
+            font-weight: 400;
+            color: var(--cyan);                
+        }
+        .coin .img-coin{            
+            width: 0.5rem;   
+            height: 1rem;
+            margin-right: 0.3rem;
+        }
+        .day span{
+            font-weight: 300;
+            color: var(--soft-blue);
+        }
+        .day .img-clock{
+            width: 1rem;   
+            height: 1rem;
+            margin-right: 0.3rem;
+        }
+        .creator{
+            margin-top: 0.5rem;   
+            border-top: 1px solid var(--line-dark-blue);                             
+        }
+        .creator div{
+            margin-top: 0.3rem;               
+        }
+        .creator img{
+            width: 1.4rem;
+            height: 1.4rem;
+            border-radius: 50%;
+            margin-right: 0.8rem;
+            border: 1px solid var(--white);
+        }
+        .creator span{
+            color: var(--soft-blue);
+            font-weight: 300;
+            font-size: 0.8rem;
+        }
+        .creator span a{                        
+            font-weight: 300;
+        }
+        footer{
+            position: absolute; 
+            bottom: 0;
+        }
+        .attribution { font-size: 11px; text-align: center; color: var(--white);}
+        .attribution a { color: hsl(228, 45%, 44%); }
